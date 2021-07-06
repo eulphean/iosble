@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta property="og:title" content="MOMIMSAFE">
+    <meta property="og:image" content="./momimsafe.jpg"> -->
+    <title>iosBle</title>
+    <!-- <link rel="shortcut icon" href ="./favicon.ico"/>   -->
+    <script type='text/javascript' src='./main.js'></script>
+    <style>
+        #root {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title {
+            color: blue;
+        }
+
+        #buttonContainer {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+        <div id='title'>
+            Bluetooth Testing App
+        </div>
+        <div id='buttonContainer'>
+          <button onclick="connect()">Connect</button>
+          <button onclick="disconnect()">Disconnect</button>
+        </div>
+    </div>
+  </body>
+</html>
