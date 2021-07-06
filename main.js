@@ -41,7 +41,10 @@ function connect() {
 
 function handleRxData(event) {
     console.log('Data received:');
-    console.log(event);
+    decoder = new TextDecoder('utf8');
+    result = decoder.decode(event.target.value);
+    console.log(result);
+    // console.log(event);
 }
 
 function disconnect() {
